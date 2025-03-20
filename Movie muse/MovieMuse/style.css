@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* NavBar */
+.navbar {
+    background-color:#333333;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+
+}
+.navbar-brand img {
+    width:50px;
+}
+.navbar h1{
+    font-size: 1rem; 
+    white-space: pre-line; 
+    color: #f5945c;
+}
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 1.1rem;
+}
+.login-btn {
+    background-color: #E47934 !important;
+    color: white !important; 
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+/* Smooth transition for sticky navbar */
+#navbar {
+    transition: all 0.3s ease-in-out;
+}
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* Keyframes for slide-down animation */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for shadow animation */
+@keyframes shadowDrop {
+    from {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    to {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+/* Apply animations when the navbar becomes sticky */
+.sticky-top {
+    animation: fadeIn 0.5s ease-in-out, slideDown 0.5s ease-in-out, shadowDrop 0.5s ease-in-out;
+    /* Slightly transparent background */
+    backdrop-filter: blur(5px);
+    /* Add a blur effect for modern browsers */
+}
+/*----------------------------------------------------------------------------------------------*/
+/* Section 1 */
+#first-section{
+    background-image: url('img/background.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.btn-warning{
+    background-color: #E47934 !important;
+    border: #E47934 !important;
+}
+/*----------------------------------------------------------------------------------------------*/
+/* Section 2 */
+.card-img-overlay {
+    background: linear-gradient(to top, rgba(255, 87, 34, 0.9), transparent);
+}
+.color-arrow{
+    color: #E47934;
+}
