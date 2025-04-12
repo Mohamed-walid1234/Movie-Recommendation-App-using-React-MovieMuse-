@@ -1,10 +1,8 @@
-import Movies from "./pages/movies/Movies"
-
 function App() {
 
   return (
     <>
-      <Movies/>
+      <p>Hello World</p>
     </>
   )
 }

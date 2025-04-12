@@ -1,11 +1,11 @@
 .bg-primary {
-    background-color: #D86A15;
+    background-color: #D86A15 !important;
 }
 
 .btn-primary {
-    background-color: #D86A15;
+    background-color: #D86A15 !important;
 }
 
 .text-primary {
-    color: #D86A15;
+    color: #D86A15 !important;
 }
