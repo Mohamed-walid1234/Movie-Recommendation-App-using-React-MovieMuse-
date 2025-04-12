@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #363535;
+}
+
+.placeholderColor::placeholder {
+    color: #bababa;
+    
+}
+
+.btnColor {
+    background-color: #e67220;
+}
+
+.textColor {
+    color: #e67220;
+    text-decoration: none;
+}
