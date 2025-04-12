@@ -2,6 +2,10 @@
     background-color: #D86A15 !important;
 }
 
+.bg-secondary {
+    background-color: #333333;
+}
+
 .btn-primary {
     background-color: #D86A15 !important;
 }
