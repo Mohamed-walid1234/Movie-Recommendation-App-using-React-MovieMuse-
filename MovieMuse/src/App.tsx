@@ -1,10 +1,10 @@
-import { Route } from "react-router-dom"
+import Movies from "./pages/movies/Movies"
 
 function App() {
 
   return (
     <>
-      <p>Hello world</p>
+      <Movies/>
     </>
   )
 }
