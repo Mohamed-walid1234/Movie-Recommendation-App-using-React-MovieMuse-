@@ -1,0 +1,10 @@
+.bg_one{
+    background-color: #151515;
+}
+.bg_two{
+    background-color: #171717;
+}
+.custom_container {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
