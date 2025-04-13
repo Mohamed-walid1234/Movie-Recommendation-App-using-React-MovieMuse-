@@ -14,9 +14,9 @@ function Signup() {
           <div className='col-6 d-flex p-0 align-self-lg-center justify-content-lg-center'>
             <div className='d-flex flex-column align-items-center justify-content-center gap-4'>
               <img src={Logo} alt="Logo" className='w-50 pb-5' />
-              <input type="text" placeholder='Name' className='rounded-5 w-75 p-2' />
-              <input type="text" placeholder='Enter your email' className='rounded-5 w-75 p-2' />
-              <input type="password" placeholder='Enter your password' className='rounded-5 w-75 p-2' />
+              <input type="text" placeholder='Name' className='rounded-5 w-75 p-2 form-control border-0 shadow-none' />
+              <input type="text" placeholder='Enter your email' className='rounded-5 w-75 p-2 form-control border-0 shadow-none' />
+              <input type="password" placeholder='Enter your password' className='rounded-5 w-75 p-2 form-control border-0 shadow-none' />
               <button className='w-75 rounded-5 btn-primary p-2'>Sign Up</button>
               <p className='text-primary'>Already have an account? <a href="#" className='text-primary'>Log in</a></p>
             </div>
