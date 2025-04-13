@@ -31,10 +31,23 @@ return (
 
             <div className="">
                 <ul className="d-flex overflow-x-hidden" style={{ listStyleType: "none", padding: "0px"}}>
-                    <li className=" me-4 mb-3 ">All</li>
-                    <li className=" me-4 mb-3 ">Movies</li>
-                    <li className=" me-4 mb-3 "><pre>TV Shows</pre></li>
-                    <li className=" me-4 mb-3 ">filters</li>
+                    <li className=" me-4 mb-3 "><h5>All</h5></li>
+                    <li className=" me-4 mb-3 "><h6>Movies</h6></li>
+                    <li className=" me-4 mb-3 "><pre><h6>TV Shows</h6></pre></li>
+                    <li className=" me-4 mb-3 "><h6>filters</h6></li>
+                    <form action="">
+                    <div className="input-group">
+                        <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Search for movies"
+                        aria-label="Search"
+                        />
+                        <button className="btn btn-primary" type="button">
+                        🔍
+                        </button>
+                    </div>
+                    </form>
                     <li className=" me-4 mb-3 ">Genres</li>
                     <li className=" me-4 mb-3 ">Rating</li>
                     <li className=" me-4 mb-3 ">Price</li>
