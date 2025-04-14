@@ -1,9 +1,11 @@
-// import style from "./Home.module.css"
+import style from "./Home.module.css"
 
 function Home() {
     return (
     <>
-        <div>Home</div>
+        <div className={style.container}>
+            working on home
+        </div>
     </>  
     );
 }
