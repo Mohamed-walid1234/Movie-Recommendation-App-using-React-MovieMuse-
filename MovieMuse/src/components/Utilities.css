@@ -13,3 +13,7 @@
 .text-primary {
     color: #D86A15 !important;
 }
+
+.border-primary {
+    border-color: #D86A15 !important;
+}
