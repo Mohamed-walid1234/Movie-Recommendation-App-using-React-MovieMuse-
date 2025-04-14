@@ -26,7 +26,12 @@ export default createBrowserRouter([
         Component: Auth,
         children:[
             {
-                index:true,
+                
+                index: true,
+                Component: Home,
+            },
+            {
+                path:"login",
                 Component: Login,
             },
             {

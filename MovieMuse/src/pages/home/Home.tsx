@@ -74,7 +74,7 @@ function Home() {
                     </div>
                 </section>
                 {/* <!-- this is the features section --> */}
-                <section>
+                <section id="features">
                     <p className={`${Styles['FeaturesHeader']} text-center text-primary font`}>Everything You Need for Movie Night</p>
                     <div className={`${Styles['wrapper']}`}>
                         <div className={`${Styles['box']}`}>
@@ -123,7 +123,7 @@ function Home() {
                 </section >
                 <br></br>
                 {/* <!-- this is the testimonials section --> */}
-                <section>
+                <section id="testimonials">
                     <p className={`${Styles['TestimonialsHeader']} font text-center text-primary`}>Testimonials</p>
                     <div className={`${Styles['card-list']}`}>
                         <a href="#" className={`${Styles['card-item']}`}>
