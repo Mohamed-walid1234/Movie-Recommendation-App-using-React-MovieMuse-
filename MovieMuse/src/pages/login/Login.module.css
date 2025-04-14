@@ -4,6 +4,10 @@
     height: 100%;
 }
 
+.bg-third-color {
+    background-color: #171717;
+}
+
 .placeholder::placeholder {
     padding-left: 10px;
 }
@@ -19,5 +23,8 @@
 @media (max-width: 767.98px) {
     .shadow-sm-size {
         box-shadow: none !important;
+    }
+    .bg-third-color {
+        background-color: #151515;
     }
 }
