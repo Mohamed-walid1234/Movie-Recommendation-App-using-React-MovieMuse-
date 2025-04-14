@@ -1,4 +1,3 @@
-import { style } from 'framer-motion/client';
 import NavbarLogo from '../../assets/images/Full logo.png';
 import Styles from './Navbar.module.css'
 
