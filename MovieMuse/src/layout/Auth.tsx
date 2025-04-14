@@ -10,7 +10,7 @@ function Auth() {
     <div>
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top sticky-top">
                 <div className="container">
-            <a className="navbar-brand" href="/auth">
+            <a className="navbar-brand" href="/">
                 <img className={`${StylesNavBar["Logo"]}`} src={logo} alt="Logo"/>
             </a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,11 +18,11 @@ function Auth() {
             </button>
             <div className="collapse navbar-collapse" id="navbar-collapse">
                 <ul className="navbar-nav ms-auto gap-lg-4">
-                    <li className="nav-item"><a className={`nav-link font text-light ${StylesNavBar['on-hover-link']}`} href="auth">Home</a></li>
-                    <li className="nav-item"><a className={`nav-link font text-light ${StylesNavBar['on-hover-link']}`} href="#about">About</a></li>
-                    <li className="nav-item"><a className={`nav-link font text-light ${StylesNavBar['on-hover-link']}`} href="#features">Features</a></li>
-                    <li className="nav-item"><a className={`nav-link font text-light ${StylesNavBar['on-hover-link']}`} href="#testimonials">Testimonials </a></li>
-                    <a href="#" className={`align-self-lg-center btn btn-primary border-0 font px-4 rounded-5 pt-2 ${StylesNavBar['on-hover-btn']}`}>LOGIN</a>
+                    <li className="nav-item"><a className={`nav-link font text-light ${StylesNavBar['on-hover-link']}`} href="/#">Home</a></li>
+                    <li className="nav-item"><a className={`nav-link font text-light ${StylesNavBar['on-hover-link']}`} href="/#about">About</a></li>
+                    <li className="nav-item"><a className={`nav-link font text-light ${StylesNavBar['on-hover-link']}`} href="/#features">Features</a></li>
+                    <li className="nav-item"><a className={`nav-link font text-light ${StylesNavBar['on-hover-link']}`} href="/#testimonials">Testimonials </a></li>
+                    <a href="/login" className={`align-self-lg-center btn btn-primary border-0 font px-4 rounded-5 pt-2 ${StylesNavBar['on-hover-btn']}`}>LOGIN</a>
                 </ul>
             </div>
         </div>

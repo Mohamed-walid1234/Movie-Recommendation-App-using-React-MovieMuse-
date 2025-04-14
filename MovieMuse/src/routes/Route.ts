@@ -12,17 +12,16 @@ export default createBrowserRouter([
         Component: Main,
         children:[
             {
-                index: true,
+                path:"home",
                 Component: Home,
             },
             {
-                path:"movies",
+                index: true,
                 Component: Movies,
             }
         ]
     },
     {
-        path: "auth",
         Component: Auth,
         children:[
             {
