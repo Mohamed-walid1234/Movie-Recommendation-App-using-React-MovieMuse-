@@ -28,7 +28,7 @@ return (
         <div className={`${style.bg_two} overflow-x-hidden  container`}>
             {/* Intro */}
             <motion.div {...fadeInDown}>
-                <h4 className={`${style.font} text-primary fw-bold`}>Popular Movies and TV Shows – MovieMuse</h4>
+                <h4 className={`font text-primary fw-bold`}>Popular Movies and TV Shows – MovieMuse</h4>
                 <p className="mb-1">
                     We’re glad you’re here! With MovieMuse, you can easily find where to stream your
                     favorite movies and TV series.
