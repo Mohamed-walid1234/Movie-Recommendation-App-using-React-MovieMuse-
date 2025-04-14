@@ -3,7 +3,7 @@
 }
 
 .bg-secondary {
-    background-color: #333333;
+    background-color: #333333 !important;
 }
 
 .btn-primary {

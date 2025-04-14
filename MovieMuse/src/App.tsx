@@ -1,10 +1,14 @@
 import Movies from "./pages/movies/Movies"
+import Login from "./pages/login/Login";
+import Signup from "./pages/signup/Signup";
 
 function App() {
 
   return (
     <>
-      <Movies/>
+      <Movies />
+      <Login />
+      <Signup />
     </>
   )
 }
