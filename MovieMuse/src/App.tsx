@@ -1,15 +1,18 @@
+import Navbar from "./layout/navbar/Navbar";
 import Movies from "./pages/movies/Movies"
 import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
-import Home from "./pages/home/Home";
+import Footer from "./layout/footer/Footer";
+
 function App() {
 
   return (
     <>
-      <Home />
+      <Navbar />
       <Movies />
       <Login />
       <Signup />
+      <Footer />
     </>
   )
 }
