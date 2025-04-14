@@ -55,9 +55,9 @@ function Home() {
 
                 {/* <!-- This is the about sectio --> */}
                 <section id="about" className={`py-5 ${Styles['bg-dark-section']}`}>
-                    <div className="container">
+                    <div className="px-5">
                         <div className="row">
-                            <div className="col-md-6">
+                            <div className="col-md-6 d-flex justify-content-center">
                                 <img src={CartoonCharacter} className={`${Styles['img-MovieMuse']}`} alt="MovieMuse Character" />
                             </div>
                             <div className="col-md-6 d-flex flex-column justify-content-center">
@@ -128,27 +128,27 @@ function Home() {
                     <div className={`${Styles['card-list']}`}>
                         <a href="#" className={`${Styles['card-item']}`}>
                             <img src={testimonials_pic1} alt="Card Image" className={`${Styles['img-size']}`} />
-                                <span className={`font-100 text-light bg-primary ${Styles['testomonial-names']}`}>Mohamed walid</span>
-                                <h3 className={`${Styles['desgin']}`}><i className="fa-solid fa-quote-left text-primary"></i> This website is awesome! It’s like it knows exactly what I want to watch. Super easy to use, and the recommendations never miss. Totally love it! <i className="fa-solid fa-quote-right text-primary"></i></h3>
-                                <div className={`${Styles['arrow']}`}>
-                                    <i className="fas fa-arrow-right card-icon"></i>
-                                </div>
+                            <span className={`font-100 text-light bg-primary ${Styles['testomonial-names']}`}>Mohamed walid</span>
+                            <h3 className={`${Styles['desgin']}`}><i className="fa-solid fa-quote-left text-primary"></i> This website is awesome! It’s like it knows exactly what I want to watch. Super easy to use, and the recommendations never miss. Totally love it! <i className="fa-solid fa-quote-right text-primary"></i></h3>
+                            <div className={`${Styles['arrow']}`}>
+                                <i className="fas fa-arrow-right card-icon"></i>
+                            </div>
                         </a>
                         <a href="#" className={`${Styles['card-item']}`}>
                             <img src={testimonials_pic2} alt="Card Image" className={`${Styles['img-size']}`} />
-                                <span className={`font-100 text-light bg-primary ${Styles['testomonial-names']}`}>Ahmed Khaled</span>
-                                <h3 className={`${Styles['desgin']}`}><i className="fa-solid fa-quote-left text-primary"></i> The website offers a seamless experience, with well-curated movie recommendations and an intuitive design. It’s a fantastic tool for discovering films effortlessly. <i className="fa-solid fa-quote-right text-primary"></i></h3>
-                                <div className={`${Styles['arrow']}`}>
-                                    <i className="fas fa-arrow-right card-icon"></i>
-                                </div>
+                            <span className={`font-100 text-light bg-primary ${Styles['testomonial-names']}`}>Ahmed Khaled</span>
+                            <h3 className={`${Styles['desgin']}`}><i className="fa-solid fa-quote-left text-primary"></i> The website offers a seamless experience, with well-curated movie recommendations and an intuitive design. It’s a fantastic tool for discovering films effortlessly. <i className="fa-solid fa-quote-right text-primary"></i></h3>
+                            <div className={`${Styles['arrow']}`}>
+                                <i className="fas fa-arrow-right card-icon"></i>
+                            </div>
                         </a>
                         <a href="#" className={`${Styles['card-item']}`}>
                             <img src={testimonials_pic3} alt="Card Image" className={`${Styles['img-size']}`} />
-                                <span className={`font-100 text-light bg-primary ${Styles['testomonial-names']}`}>Peter</span>
-                                <h3 className={`${Styles['desgin']}`}><i className="fa-solid fa-quote-left text-primary"></i> Finally, a website that understands my movie struggles! No more endless scrolling—just click, pick, and enjoy. It’s my new secret weapon for movie nights! <i className="fa-solid fa-quote-right text-primary"></i></h3>
-                                <div className={`${Styles['arrow']}`}>
-                                    <i className="fas fa-arrow-right card-icon"></i>
-                                </div>
+                            <span className={`font-100 text-light bg-primary ${Styles['testomonial-names']}`}>Peter</span>
+                            <h3 className={`${Styles['desgin']}`}><i className="fa-solid fa-quote-left text-primary"></i> Finally, a website that understands my movie struggles! No more endless scrolling—just click, pick, and enjoy. It’s my new secret weapon for movie nights! <i className="fa-solid fa-quote-right text-primary"></i></h3>
+                            <div className={`${Styles['arrow']}`}>
+                                <i className="fas fa-arrow-right card-icon"></i>
+                            </div>
                         </a>
                     </div>
                 </section>
