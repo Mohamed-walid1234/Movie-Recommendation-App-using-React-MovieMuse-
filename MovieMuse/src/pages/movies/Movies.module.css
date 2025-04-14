@@ -1,0 +1,21 @@
+.bg_one{
+    background-color: #151515;
+}
+
+.bg_two{
+    background-color: #171717;
+}
+
+.btn_style{
+    background-color: #17000771 !important;
+    font-size: 20px;
+}
+.img_style{
+    width: 50px;
+    margin: 0 auto;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
