@@ -1,0 +1,40 @@
+/* This is the slider section */
+.custom-height {
+    height: 579px;
+    object-fit: cover;
+}
+
+.carousel-caption-edits {
+    background-color: (0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* this is the about section */
+.bg-dark-section {
+    background-color: #151515;
+}
+
+.img-MovieMuse {
+    width: 80%;
+    height: 90%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.About-Header {
+    margin-top: 20px;
+    font-size: xx-large;
+}
+
+.About-Content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: large;
+}
+
+.on-hover-btn:hover {
+    background-color: #313131 !important;
+}
