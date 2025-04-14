@@ -13,8 +13,8 @@ function Login() {
               <img src={Logo} alt="Logo" className='w-50 pb-5 pt-4' />
               <input type="text" placeholder='Enter your email' className={`rounded-5 w-75 p-2 placeholderColor form-control border-0 shadow-none ${Styles['placeholder']}`} />
               <input type="password" placeholder='Enter your password' className={`rounded-5 w-75 p-2 placeholderColor form-control border-0 shadow-none ${Styles['placeholder']}`} />
-              <button className='w-75 rounded-5 btn-primary p-2'>Log in</button>
-              <a className='text-primary text-decoration-none pb-3' href="#">I forgot my password</a>
+              <button className={`w-75 rounded-5 btn-primary p-2 ${Styles['on-hover']} text-light border-0 font`}>Log in</button>
+              <a className={`text-primary text-decoration-none pb-3 ${Styles['on-hover-link']}`} href="#">I forgot my password</a>
             </div>
           </div>
           <div className='col-6 p-0 d-none d-md-flex justify-content-end'>

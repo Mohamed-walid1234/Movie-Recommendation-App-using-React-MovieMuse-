@@ -17,8 +17,8 @@ function Signup() {
               <input type="text" placeholder='Name' className={`rounded-5 w-75 p-2 form-control border-0 shadow-none ${Styles['placeholder']}`} />
               <input type="text" placeholder='Enter your email' className={`rounded-5 w-75 p-2 form-control border-0 shadow-none ${Styles['placeholder']}`} />
               <input type="password" placeholder='Enter your password' className={`rounded-5 w-75 p-2 form-control border-0 shadow-none ${Styles['placeholder']}`} />
-              <button className='w-75 rounded-5 btn-primary p-2'>Sign Up</button>
-              <p className='text-primary'>Already have an account? <a href="#" className='text-primary'>Log in</a></p>
+              <button className={`w-75 rounded-5 btn-primary p-2 ${Styles['on-hover']} border-0 text-light font`}>Sign Up</button>
+              <p className='text-primary'>Already have an account? <a href="#" className={`text-primary ${Styles['on-hover-link']}`}>Log in</a></p>
             </div>
           </div>
         </section>

@@ -8,6 +8,14 @@
     padding-left: 10px;
 }
 
+.on-hover:hover {
+    background-color: #464646 !important;
+}
+
+.on-hover-link:hover {
+    color: white !important;
+}
+
 @media (max-width: 767.98px) {
     .shadow-sm-size {
         box-shadow: none !important;
