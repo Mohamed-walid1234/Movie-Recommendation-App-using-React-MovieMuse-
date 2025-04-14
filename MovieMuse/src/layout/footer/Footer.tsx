@@ -35,7 +35,7 @@ const Footer = () => {
             <p className="text-secondary">Start your journey now</p>
             <form className="d-flex flex-column flex-sm-row gap-2 mt-2">
               <input type="email" className="form-control" placeholder="Your email" />
-              <button className="btn btn-primary text-white font" type="submit">Signup</button>
+              <button className="btn btn-primary text-white font border-0" type="submit">Signup</button>
             </form>
           </div>
         </div>
