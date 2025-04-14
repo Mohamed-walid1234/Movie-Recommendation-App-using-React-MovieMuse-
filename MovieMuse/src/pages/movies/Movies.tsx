@@ -25,7 +25,7 @@ function Movies() {
 
 return (
     <section className={`${style.bg_one} text-white py-5`}>
-        <div className={`${style.bg_two} ${style.custom_container} container`}>
+        <div className={`${style.bg_two} overflow-x-hidden  container`}>
             {/* Intro */}
             <motion.div {...fadeInDown}>
                 <h4 className={`${style.font} text-primary fw-bold`}>Popular Movies and TV Shows – MovieMuse</h4>
