@@ -5,6 +5,12 @@
   font-style: normal;
 
 }
+
+.font-100{
+  font-family: "Joti One", serif;
+  font-weight: 100 !important;
+  font-style: normal;
+}
 *{
   padding: 0;
   margin: 0;
