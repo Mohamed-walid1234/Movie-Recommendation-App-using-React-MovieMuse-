@@ -10,6 +10,7 @@ app.use(express.json());
 
 
 // SiginUp
+// create a new user
 app.post("/signup", async (req, res) => {
     const user = req.body;
      console.log(user);
@@ -25,7 +26,28 @@ app.post("/signup", async (req, res) => {
         res.status(500).json({ message: "Error creating user" });
     }
 });
-
+// delete user
+app.delete("/profile/:id", async (req, res) => {
+    const {id} = req.params;
+    try {
+        await signup.findByIdAndDelete(id);
+        res.status(200).json({ message: "User deleted successfully" });
+    } catch (error) {
+        console.log(error.message);
+        res.status(500).json({ message: "Error deleting user" });
+    }
+});
+// get one user
+app.get("/profile/:id", async (req, res) => {
+    const {id} = req.params;
+    try {
+        const user = await signup.findById(id);
+        res.status(200).json(user);
+    } catch (error) {
+        console.log(error.message);
+        res.status(500).json({ message: "Error getting user" });
+    }
+});
 
 
 
