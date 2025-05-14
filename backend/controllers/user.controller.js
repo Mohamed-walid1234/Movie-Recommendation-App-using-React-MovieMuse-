@@ -1,5 +1,6 @@
 import users from "../models/users.model.js";
 
+// create a new user
 export const postUser = async (req, res) => {
     const user = req.body;
     console.log(user);
@@ -23,6 +24,7 @@ export const postUser = async (req, res) => {
     }
 }
 
+// delete a user
 export const deleteUser = async (req, res) => {
     const {id} = req.params;
     try {
@@ -34,6 +36,7 @@ export const deleteUser = async (req, res) => {
     }
 }
 
+// get one user
 export const getUser = async (req, res) => {
     const {id} = req.params;
     try {
@@ -44,7 +47,7 @@ export const getUser = async (req, res) => {
         res.status(500).json({ message: "Error getting user" });
     }
 }
-
+// change user ditails
 export const updateUser = async (req, res) => {
     const {id} = req.params;
     const user = req.body;

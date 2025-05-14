@@ -1,15 +1,15 @@
 import express from "express";
 import dotenv from 'dotenv';
 import { connectDB } from "./config/db.js";
-import usersRoute from "./routes/users.route.js";
+import userRoute from "./routes/users.route.js";
 
 dotenv.config();
 const app = express();
 app.use(express.json());
 
 
-// users route
-app.use("/profile", usersRoute);
+// user route
+app.use("/profile", userRoute);
 
 
 

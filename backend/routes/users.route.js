@@ -2,8 +2,7 @@ import express from "express";
 import { deleteUser, getUser, postUser, updateUser } from "../controllers/user.controller.js";
 const router = express.Router();
 
-
-// SiginUp
+// users routes
 // create a new user
 router.post("/signup", postUser);
 // delete user
