@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
-// Define the schema for the signup model
-const signupSchema = new mongoose.Schema({
+// Define the schema for the users model
+const usersSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
@@ -15,5 +15,5 @@ const signupSchema = new mongoose.Schema({
         required: true,
     }
     });
-const signup = mongoose.model("Signup", signupSchema);
-export default signup;
+const users = mongoose.model("Users", usersSchema);
+export default users;
