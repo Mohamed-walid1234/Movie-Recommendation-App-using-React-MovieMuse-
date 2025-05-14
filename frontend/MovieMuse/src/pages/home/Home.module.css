@@ -1,7 +1,7 @@
 /* This is the slider section */
 .custom-height {
     height: 579px;
-    object-fit: cover;
+    object-fit: initial;
 }
 
 .carousel-caption-edits {

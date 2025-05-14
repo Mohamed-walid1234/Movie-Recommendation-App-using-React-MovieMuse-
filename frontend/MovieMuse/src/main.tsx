@@ -11,8 +11,12 @@ import './index.css'
 
 // the app
 import App from './App.tsx'
+import Movie_Page from './pages/movie_page/Movie_Page.tsx';
+import Profile from './pages/profile/Profile.tsx';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-      <App />
+    <Profile />
+    <Movie_Page />
+    <App />
   </StrictMode>
 )

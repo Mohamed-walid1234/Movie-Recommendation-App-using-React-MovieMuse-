@@ -1,0 +1,87 @@
+body {
+    background-color: #151515;
+    font-family: "Joti One", serif;
+    color: white;
+}
+
+.profileContainer {
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+    /* max-width: 1200px; */
+    margin: auto;
+}
+
+.profileSidebar {
+    width: 25%;
+    background-color: #2e2e2e;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+}
+
+.profileForm,
+.profileExperience {
+    background-color: #2e2e2e;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.profileForm h2,
+.profileExperience h2 {
+    color: #D86A15;
+    margin-bottom: 20px;
+}
+
+form input,
+.profileExperience input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+}
+
+.formGroup {
+    display: flex;
+    gap: 10px;
+}
+
+.formGroup input {
+    width: 100%;
+}
+
+.btnSubmit {
+    background-color: #D86A15;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btnSubmit:hover {
+    background-color: #313131;
+    box-shadow: 0 0 10px #D86A15, 0 0 20px #D86A15;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
