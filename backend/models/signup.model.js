@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+// Define the schema for the signup model
 const signupSchema = new mongoose.Schema({
     name: {
         type: String,
