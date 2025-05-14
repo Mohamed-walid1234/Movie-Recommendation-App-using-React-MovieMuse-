@@ -48,7 +48,18 @@ app.get("/profile/:id", async (req, res) => {
         res.status(500).json({ message: "Error getting user" });
     }
 });
-
+// change user ditails
+app.put("/profile/:id", async (req, res) => {
+    const {id} = req.params;
+    const user = req.body;
+    try {
+        await signup.findByIdAndUpdate(id, user,{new: true});
+        res.status(200).json({ message: "User updated successfully" });
+    } catch (error) {
+        console.log(error.message);
+        res.status(500).json({ message: "Error updating user" });
+    }
+});
 
 
 
