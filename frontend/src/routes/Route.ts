@@ -8,6 +8,7 @@ import Signup from "../pages/signup/Signup";
 import Profile from "../pages/profile/Profile";
 import Movie_Page from "../pages/singlemovie/Movie_Page";
 
+
 export default createBrowserRouter([
     {
         path: "main",
@@ -23,14 +24,12 @@ export default createBrowserRouter([
             },
             {
                 path:"profile",
-                index: true,
                 Component: Profile,
             },
             {
-                path:"movie",
-                index: true,
+                path: "movie",
                 Component: Movie_Page,
-            }
+            },
         ]
     },
     {
