@@ -5,6 +5,8 @@ import Movies from "../pages/movies/Movies";
 import Auth from "../layout/Auth";
 import Login from "../pages/login/Login";
 import Signup from "../pages/signup/Signup";
+import Profile from "../pages/profile/Profile";
+import Movie_Page from "../pages/singlemovie/Movie_Page";
 
 export default createBrowserRouter([
     {
@@ -18,6 +20,16 @@ export default createBrowserRouter([
             {
                 index: true,
                 Component: Movies,
+            },
+            {
+                path:"profile",
+                index: true,
+                Component: Profile,
+            },
+            {
+                path:"movie",
+                index: true,
+                Component: Movie_Page,
             }
         ]
     },

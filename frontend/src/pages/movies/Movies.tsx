@@ -87,11 +87,13 @@ function Movies() {
                         <div key={index} className="col-6 col-sm-4 col-md-3 col-lg-2">
                             
                             <div className="card bg-dark text-light h-100 border-0 shadow-sm position-relative rounded-4">
+                                <a href="/main/movie">
                                 <img
                                     src={movie.primaryImage}
                                     className="card-img-top rounded-top-4"
                                     alt={movie.primaryTitle}
                                 />
+                                </a>
                                 <div className="card-body p-2">
                                     <h6 className="card-title small mb-0 text-center fw-semibold">
                                         {movie.primaryTitle}

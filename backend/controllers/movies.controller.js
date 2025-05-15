@@ -14,7 +14,7 @@ export const getMovie = async (req, res) => {
 // get all movies   
 export const getMovies = async (req, res) => {
     try {
-        const moviesList = await movies.find().limit(30);
+        const moviesList = await movies.find();
         res.status(200).json(moviesList);
         console.log(moviesList);
     } catch (error) {
