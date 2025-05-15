@@ -16,7 +16,7 @@ const Profile = () => {
 
             <div className={`${styles.profileForm}`}>
                 <h2>Profile Settings</h2>
-                <form>
+                <form className={`${styles['Profile_Input']}`}>
                     <div className={styles.formGroup}>
                         <input type="text" placeholder="First Name" />
                         <input type="text" placeholder="Surname" />
