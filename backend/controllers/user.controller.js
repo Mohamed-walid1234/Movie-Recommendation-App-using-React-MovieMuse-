@@ -36,7 +36,7 @@ export const deleteUser = async (req, res) => {
     }
 }
 
-// get one user
+// get one user by id
 export const getUser = async (req, res) => {
     const {id} = req.params;
     try {
@@ -47,6 +47,7 @@ export const getUser = async (req, res) => {
         res.status(500).json({ message: "Error getting user" });
     }
 }
+
 // change user ditails
 export const updateUser = async (req, res) => {
     const {id} = req.params;
@@ -59,3 +60,17 @@ export const updateUser = async (req, res) => {
         res.status(500).json({ message: "Error updating user" });
     }
 }
+
+//get one user by email
+export const getUserByEmail = async (req, res) => {
+    const email = req.params.email;
+    try {
+      const user = await users.findOne({ email });
+      if (!user) {
+        return res.status(404).json({ message: 'User not found' });
+      }
+      res.json(user);
+    } catch (err) {
+      res.status(500).json({ message: 'Server error', error: err.message });
+    }
+  }

@@ -30,7 +30,7 @@ export default createBrowserRouter([
                 Component: Home,
             },
             {
-                path:"login",
+                path:"login/*",
                 Component: Login,
             },
             {

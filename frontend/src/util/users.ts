@@ -42,4 +42,30 @@ export const useUsersUtil = create<UsersUtilState>((set) => ({
       return { success: false, message: "Network or server error" };
     }
   },
+
+
+  fatchUsers: async () => {
+    try {
+      const response = await fetch("/api/profile/login");
+      if (!response.ok) {
+        throw new Error("Failed to fetch users");
+      }
+      const data: User[] = await response.json();
+      set({ users: data });
+    } catch (error) {
+      console.error("Error fetching users:", error);
+    }
+  }
 }));
+
+
+
+
+
+
+
+
+
+
+
+// get user by email

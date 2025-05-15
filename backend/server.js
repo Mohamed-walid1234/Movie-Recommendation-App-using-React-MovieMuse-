@@ -7,6 +7,7 @@ import moviesRoute from "./routes/movies.route.js";
 dotenv.config();
 const app = express();
 app.use(express.json());
+app.use(express.urlencoded());
 
 
 // user route

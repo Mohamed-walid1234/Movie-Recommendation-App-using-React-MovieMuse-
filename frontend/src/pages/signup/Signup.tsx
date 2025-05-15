@@ -33,7 +33,7 @@ function Signup() {
   // handle the submit
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    await handleAddUser(); // Call your login or createUsers logic
+    await handleAddUser(); 
   };
   
   return (
