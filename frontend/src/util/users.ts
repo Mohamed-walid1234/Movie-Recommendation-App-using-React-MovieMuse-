@@ -69,3 +69,30 @@ export const useUsersUtil = create<UsersUtilState>((set) => ({
 
 
 // get user by email
+interface User {
+  name: string;
+  email: string;
+  password: string;
+}
+interface UserState {
+  users: User[];
+  loading: boolean;
+  error: string | null;
+  fetchUsers: () => Promise<void>;
+}
+export const useUserStore = create<UserState>((set) => ({
+  users: [],
+  loading: false,
+  error: null,
+  fetchUsers: async () => {
+    set({ loading: true, error: null });
+    try {
+      const res = await fetch('http://localhost:5000/api/profile');
+      if (!res.ok) throw new Error('Failed to fetch Users');
+      const data: User[] = await res.json();
+      set({ users: data, loading: false });
+    } catch (err) {
+      set({ error: (err as Error).message, loading: false });
+    }
+  },
+}));

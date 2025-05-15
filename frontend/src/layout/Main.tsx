@@ -4,6 +4,10 @@ import StylesNavBar from './Navbar-Auth.module.css';
 import StylesFooter from './Footer-Auth.module.css';
 
 function Main() {
+    const clearData = () => {
+        localStorage.removeItem('setLoginUser');
+        alert('Data cleared!');
+      };
     return (
     <>
         {/* NavBar */}
@@ -21,7 +25,7 @@ function Main() {
                         <li className="nav-item"><a className={`nav-link font text-light ${StylesNavBar['on-hover-link']}`} href="/main/home">Home</a></li>
                         <li className="nav-item"><a className={`nav-link font text-light ${StylesNavBar['on-hover-link']}`} href="/main">Movies</a></li>
                         <li className="nav-item"><a className={`nav-link font text-light ${StylesNavBar['on-hover-link']}`} href="/main/profile">Profile</a></li>
-                        <a href="/" className={`align-self-lg-center btn btn-primary border-0 font px-4 rounded-5 pt-2 ${StylesNavBar['on-hover-btn']}`}>Log Out</a>
+                        <a href="/" onClick={clearData} className={`align-self-lg-center btn btn-primary border-0 font px-4 rounded-5 pt-2 ${StylesNavBar['on-hover-btn']}`}>Log Out</a>
                     </ul>
                 </div>
             </div>

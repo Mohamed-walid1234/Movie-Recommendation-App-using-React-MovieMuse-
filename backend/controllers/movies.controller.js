@@ -16,7 +16,6 @@ export const getMovies = async (req, res) => {
     try {
         const moviesList = await movies.find();
         res.status(200).json(moviesList);
-        console.log(moviesList);
     } catch (error) {
         console.log(error.message);
         res.status(500).json({ message: `${error.message} Error getting movies`   });
