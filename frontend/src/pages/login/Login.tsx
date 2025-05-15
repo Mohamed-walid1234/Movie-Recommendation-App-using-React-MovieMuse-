@@ -3,12 +3,13 @@ import Login_logo from '../../assets/images/Login.Signup.jpg';
 import Logo from '../../assets/images/logo.png';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { loginYet } from "../../util/loginyet";
+import { loginYet } from '../../util/loginyet';
 
 
 function Login() {
   
-    
+  const isLoginned = loginYet();
+
   // navigate to another page
   const navigate = useNavigate();
   
@@ -25,13 +26,16 @@ function Login() {
       setErrorMessage("Please fill all the fields");
     }else if (!loginUser.email.includes('@gmail.com')) {
       setErrorMessage("Please enter a valid email");
-    }else if(loginYet()){
+    }else if(isLoginned) {
+      console.log(isLoginned)
       navigate('/main');
+    }else {
+      console.log(isLoginned)
+      setErrorMessage("Invalid email or password");
     }
   }
   // handle the submit
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
     await handleLogin();
     localStorage.setItem('setLoginUserEmail', JSON.stringify(loginUser.email));
     localStorage.setItem('setLoginUserPassword', JSON.stringify(loginUser.password));

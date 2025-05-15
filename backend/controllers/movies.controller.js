@@ -1,4 +1,3 @@
-import movies from "../models/movies.model.js";
 import ShowMovie from "../models/shows_movies.model.js";
 
 // get one movie

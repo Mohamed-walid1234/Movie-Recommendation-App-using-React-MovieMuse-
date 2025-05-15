@@ -1,7 +1,7 @@
 import styles from './Profile.module.css';
-
+import { loginYet } from '../../util/loginyet';
 const Profile = () => {
-
+    const isLoginned = loginYet();
     return (
         <div className={`${styles.profileContainer}`}>
             <div className={styles.profileSidebar}>
