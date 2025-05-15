@@ -20,7 +20,7 @@ function Main() {
                     <ul className="navbar-nav ms-auto gap-lg-4">
                         <li className="nav-item"><a className={`nav-link font text-light ${StylesNavBar['on-hover-link']}`} href="/main/home">Home</a></li>
                         <li className="nav-item"><a className={`nav-link font text-light ${StylesNavBar['on-hover-link']}`} href="/main">Movies</a></li>
-                        <li className="nav-item"><a className={`nav-link font text-light ${StylesNavBar['on-hover-link']}`} href="#">Profile</a></li>
+                        <li className="nav-item"><a className={`nav-link font text-light ${StylesNavBar['on-hover-link']}`} href="/main/profile">Profile</a></li>
                         <a href="/" className={`align-self-lg-center btn btn-primary border-0 font px-4 rounded-5 pt-2 ${StylesNavBar['on-hover-btn']}`}>Log Out</a>
                     </ul>
                 </div>

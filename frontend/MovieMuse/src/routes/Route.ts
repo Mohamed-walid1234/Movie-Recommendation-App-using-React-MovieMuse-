@@ -5,32 +5,42 @@ import Movies from "../pages/movies/Movies";
 import Auth from "../layout/Auth";
 import Login from "../pages/login/Login";
 import Signup from "../pages/signup/Signup";
+import Profile from "../pages/profile/Profile";
+import Movie_Page from "../pages/movie_page/Movie_Page";
 
 export default createBrowserRouter([
     {
         path: "main",
         Component: Main,
-        children:[
+        children: [
             {
-                path:"home",
+                path: "home",
                 Component: Home,
             },
             {
                 index: true,
                 Component: Movies,
+            },
+            {
+                path: "movie?/:title",
+                Component: Movie_Page,
+            },
+            {
+                path: "profile",
+                Component: Profile,
             }
         ]
     },
     {
         Component: Auth,
-        children:[
+        children: [
             {
-                
+
                 index: true,
                 Component: Home,
             },
             {
-                path:"login",
+                path: "login",
                 Component: Login,
             },
             {
