@@ -1,14 +1,14 @@
 body {
     background-color: #151515;
-    font-family: "Joti One", serif;
     color: white;
 }
 
 .profileContainer {
+    font-family: "Joti One", serif;
     display: flex;
     padding: 40px;
     gap: 20px;
-    /* max-width: 1200px; */
+    /* max-width: 1200px;  */
     margin: auto;
 }
 
@@ -45,7 +45,7 @@ body {
     margin-bottom: 20px;
 }
 
-form input,
+.Profile_Input input,
 .profileExperience input {
     width: 100%;
     padding: 12px;
