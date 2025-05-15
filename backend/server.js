@@ -12,7 +12,7 @@ app.use(express.urlencoded());
 app.use(cors());
 // user route
 app.use("/api/profile", userRoute);
-app.use("/api/movies", moviesRoute);    
+app.use("/api/movies", moviesRoute);
 
 
 

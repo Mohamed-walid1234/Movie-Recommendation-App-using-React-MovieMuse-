@@ -1,8 +1,9 @@
 import movies from "../models/movies.model.js";
+import ShowMovie from "../models/shows_movies.model.js";
 
 // get one movie
 export const getMovie = async (req, res) => {
-    const {id} = req.params;
+    const { id } = req.params;
     try {
         const movie = await movies.findById(id);
         res.status(200).json(movie);
@@ -14,10 +15,11 @@ export const getMovie = async (req, res) => {
 // get all movies   
 export const getMovies = async (req, res) => {
     try {
-        const moviesList = await movies.find();
-        res.status(200).json(moviesList);
+        const Details = await ShowMovie.find().sort({ startYear: -1}).limit(30);
+        res.status(200).json(Details);
+        console.log(Details);
     } catch (error) {
         console.log(error.message);
-        res.status(500).json({ message: `${error.message} Error getting movies`   });
+        res.status(500).json({ message: `${error.message} Error getting movies` });
     }
 }
