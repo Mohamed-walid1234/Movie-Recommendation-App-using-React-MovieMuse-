@@ -85,6 +85,7 @@ function Movie_Page() {
                     </div>
                 </section>
             </div>
+            
         </>
     )
 }
