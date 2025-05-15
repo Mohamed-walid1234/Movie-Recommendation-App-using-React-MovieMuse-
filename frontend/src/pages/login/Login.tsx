@@ -36,10 +36,11 @@ function Login() {
   }
   // handle the submit
   const handleSubmit = async (e: React.FormEvent) => {
-    await handleLogin();
-    localStorage.setItem('setLoginUserEmail', JSON.stringify(loginUser.email));
-    localStorage.setItem('setLoginUserPassword', JSON.stringify(loginUser.password));
-     
+    e.preventDefault();
+     await localStorage.setItem('setLoginUserEmail', JSON.stringify(loginUser.email));
+     await localStorage.setItem('setLoginUserPassword', JSON.stringify(loginUser.password));
+      handleLogin();
+
   };
   
 
