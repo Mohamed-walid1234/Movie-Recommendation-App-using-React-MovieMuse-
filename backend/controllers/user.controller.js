@@ -12,15 +12,15 @@ export const postUser = async (req, res) => {
         // Check if a user with the same email already exists
         const existingUser = await users.findOne({ email: user.email });
         if (existingUser) {
-            return res.status(409).json({ message: "Email already in use, please choose another" });
+            return res.status(409).json("account already exist");
         }
         // Create and save new user
         const newUser = new users(user);
         await newUser.save();
-        res.status(201).json({ message: "User created successfully" });
+        res.status(201).json("User created successfully" );
     } catch (error) {
         console.log(error.message);
-        res.status(500).json({ message: "Error creating user" });
+        res.status(500).json("Error creating user");
     }
 }
 

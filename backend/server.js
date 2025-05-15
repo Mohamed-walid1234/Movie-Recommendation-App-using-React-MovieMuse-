@@ -10,8 +10,8 @@ app.use(express.json());
 
 
 // user route
-app.use("/profile", userRoute);
-app.use("/movies", moviesRoute);    
+app.use("/api/profile", userRoute);
+app.use("/api/movies", moviesRoute);    
 
 
 
