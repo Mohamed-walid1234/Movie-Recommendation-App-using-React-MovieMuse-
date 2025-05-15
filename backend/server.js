@@ -1,12 +1,18 @@
 import express from "express";
 import dotenv from 'dotenv';
 import { connectDB } from "./config/db.js";
+<<<<<<< HEAD
 import signup from "./models/signup.model.js";
 
+=======
+import userRoute from "./routes/users.route.js";
+import moviesRoute from "./routes/movies.route.js";
+>>>>>>> 128ad7bf8ea78ea8bf20b241a75a14c1b5232174
 
 dotenv.config();
 const app = express();
 app.use(express.json());
+<<<<<<< HEAD
 
 
 // SiginUp
@@ -52,6 +58,14 @@ app.get("/profile/:id", async (req, res) => {
 
 
 
+=======
+app.use(express.urlencoded());
+
+
+// user route
+app.use("/api/profile", userRoute);
+app.use("/api/movies", moviesRoute);    
+>>>>>>> 128ad7bf8ea78ea8bf20b241a75a14c1b5232174
 
 
 
@@ -61,5 +75,8 @@ app.listen(5000, () => {
     console.log("Serverr  is running on port 5000");
 
 });
+<<<<<<< HEAD
 
 // EKw0asaLOSu3pbPn
+=======
+>>>>>>> 128ad7bf8ea78ea8bf20b241a75a14c1b5232174

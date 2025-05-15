@@ -1,0 +1,15 @@
+
+.on-hover-link:hover {
+    color: #D86A15 !important;
+}
+
+.on-hover-btn:hover {
+    background-color: #313131 !important;
+}
+
+
+.Logo {
+    width: 160px;
+    height: 45px;
+    margin-right: 20px;
+}
