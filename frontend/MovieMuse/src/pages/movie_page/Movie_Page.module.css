@@ -55,3 +55,8 @@ body {
     background-color: #d86915a9;
     cursor: pointer;
 }
+
+.on-hover-color:hover {
+    background-color: #313131 !important;
+    border-color: #313131 !important;
+}

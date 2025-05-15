@@ -68,7 +68,7 @@ function Movie_Page() {
 
                     {/* Watch Button */}
                     <div className="text-center mt-4">
-                        <button className="btn btn-primary fw-bold px-5 py-2 font border-primary">
+                        <button className={`btn btn-primary fw-bold px-5 py-2 font border-primary ${Styles['on-hover-color']}`}>
                             Watch Trailer
                         </button>
                     </div>
@@ -80,7 +80,7 @@ function Movie_Page() {
                         <h2 className={`${Styles["comment-header"]}`}>Comments</h2>
                         <form className={`${Styles["comment-form"]}`}>
                             <textarea className={`${Styles["comment-input"]}`} placeholder="Write your comment here..." rows={4}></textarea>
-                            <button type="submit" className={`btn btn-primary ${Styles['comment-submit']} ${Styles['submit']}`}>Add comment</button>
+                            <button type="submit" className={`btn btn-primary ${Styles['comment-submit']} ${Styles['submit']} ${Styles['on-hover-color']}`}>Add comment</button>
                         </form>
                     </div>
                 </section>
