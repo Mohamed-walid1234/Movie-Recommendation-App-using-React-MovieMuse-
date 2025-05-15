@@ -2,15 +2,16 @@ import Styles from '../../pages/login/Login.module.css'
 import Login_logo from '../../assets/images/Login.Signup.jpg';
 import Logo from '../../assets/images/logo.png';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { loginYet } from '../../util/loginyet';
+
+
 function Login() {
- 
+  
+  const isLoginned = loginYet();
 
-
-
-
-
-
-
+  // navigate to another page
+  const navigate = useNavigate();
   
   // handle the error message
   const [errorMessage, setErrorMessage] = useState("");
@@ -19,13 +20,26 @@ function Login() {
     email: "",
     password: ''
   })
+  //login logic 
   const handleLogin = async () => {
-    console.log(loginUser);
+    if (!loginUser.email || !loginUser.password) {
+      setErrorMessage("Please fill all the fields");
+    }else if (!loginUser.email.includes('@gmail.com')) {
+      setErrorMessage("Please enter a valid email");
+    }else if(isLoginned) {
+      console.log(isLoginned)
+      navigate('/main');
+    }else {
+      console.log(isLoginned)
+      setErrorMessage("Invalid email or password");
+    }
   }
   // handle the submit
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
     await handleLogin();
+    localStorage.setItem('setLoginUserEmail', JSON.stringify(loginUser.email));
+    localStorage.setItem('setLoginUserPassword', JSON.stringify(loginUser.password));
+     
   };
   
 
@@ -38,7 +52,7 @@ function Login() {
               <img src={Logo} alt="Logo" className='w-50 pb-5 pt-4' />
               <input onChange={(e) => setLoginUser({...loginUser, email: e.target.value})} value={loginUser.email} type="text" placeholder='Enter your email' className={`rounded-5 w-75 p-2 placeholderColor form-control border-0 shadow-none ${Styles['placeholder']}`} />
               <input onChange={(e) => setLoginUser({...loginUser, password: e.target.value})} value={loginUser.password} type="password" placeholder='Enter your password' className={`rounded-5 w-75 p-2 placeholderColor form-control border-0 shadow-none ${Styles['placeholder']}`} />
-              <button type='submit' style={{textDecoration: 'none'}}  className={`w-75 rounded-5 btn-primary p-2 ${Styles['on-hover']} text-light border-0 font text-center `}>Login</button>
+              <button  type='submit' style={{textDecoration: 'none'}}  className={`w-75 rounded-5 btn-primary p-2 ${Styles['on-hover']} text-light border-0 font text-center `}>Login</button>
               <p>{errorMessage}</p>
               <a className={`text-primary text-decoration-none ${Styles['on-hover-link']}`} href="/signup">New Account</a>
               <a className={`text-primary text-decoration-none pb-3 ${Styles['on-hover-link']}`} href="#">I forgot my password</a>
