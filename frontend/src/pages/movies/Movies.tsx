@@ -16,12 +16,7 @@ function Movies() {
     console.log(text);
 
 
-    // Sample platform icons (dummy data)
-    const platforms = Array.from({ length: 40 }, () => ({
-        title: "Solo Leveling",
-        image:
-            "https://imgs.search.brave.com/kW_PsmCQ-57F6PIIH2Th2rWmoic7_5SDXQt-lurAO6I/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvbmV0ZmxpeC9z/bWFsbC9uZXRmbGl4/X1BORzUucG5n"
-    }));
+   
 
     return (
         <section className={`${style.bg_one} text-white py-5`}>
@@ -35,21 +30,6 @@ function Movies() {
                         We’re glad you’re here! With MovieMuse, you can easily find where to stream your favorite movies and TV series.
                     </p>
                     <p className="mb-4">Pick your platform you watch on:</p>
-                </div>
-
-                {/* Platforms */}
-                <div className="d-flex overflow-x-hidden overflow-y-hidden gap-2 mb-4">
-                    {platforms.map((platform, index) => (
-                        <div key={index} className="rounded border">
-                            <button className="btn p-0 border-0 bg-transparent">
-                                <img
-                                    src={platform.image}
-                                    alt={platform.title}
-                                    className={`${style.img_style}`}
-                                />
-                            </button>
-                        </div>
-                    ))}
                 </div>
 
                 {/* Filters and Search */}
@@ -90,8 +70,10 @@ function Movies() {
                                 <a href="/main/movie">
                                 <img
                                     src={movie.primaryImage}
-                                    className="card-img-top rounded-top-4"
+                                    className="card-img-top rounded-top-4 "
                                     alt={movie.primaryTitle}
+                                    style={{ minHeight: '300px', maxHeight: '300px' , objectFit: 'cover' }}
+
                                 />
                                 </a>
                                 <div className="card-body p-2">
