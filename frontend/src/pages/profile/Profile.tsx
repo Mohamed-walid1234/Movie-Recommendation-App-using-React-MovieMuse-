@@ -39,7 +39,7 @@ const Profile = () => {
       <div className={styles.profileExperience}>
         <h2> Experience watching movies</h2>
         <input type="text" placeholder="Experience movies" />
-        <input type="text" placeholder="Additional shows" />
+        <input type="text" placeholder="Experience shows" />
         <button className={styles.btnSubmit}>Experience</button>
       </div>
     </div>

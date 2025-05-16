@@ -51,7 +51,7 @@ return (
     <div className=" align-content-center justify-content-center align-items-start gap-4 ">
         {/* Poster */}
         <div
-        className="d-flex justify-content-center align-items-center"
+        className="d-flex justify-content-center align-items-center mb-4"
         style={{ height: "100%" }}
         >
         {" "}

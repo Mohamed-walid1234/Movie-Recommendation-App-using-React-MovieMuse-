@@ -24,7 +24,6 @@ function Login() {
 
   // handle the submit
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
      await localStorage.setItem('setLoginUserEmail', JSON.stringify(loginUser.email));
      await localStorage.setItem('setLoginUserPassword', JSON.stringify(loginUser.password));
     handleLogin();

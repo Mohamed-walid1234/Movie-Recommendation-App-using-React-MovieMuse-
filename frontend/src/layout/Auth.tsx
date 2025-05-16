@@ -67,7 +67,7 @@ function Auth() {
             <p className="text-light">Start your journey now</p>
             <form className="d-flex flex-column flex-sm-row gap-2 mt-2">
               <input type="email" className="form-control" placeholder="Your email" />
-              <button className={`btn btn-primary text-white font border-0 ${StylesFooter['on-hover-btn']}`} type="submit">Signup</button>
+              <a  href="/signup" className={`btn btn-primary text-white font border-0 ${StylesFooter['on-hover-btn']}`} type="submit">Signup</a>
             </form>
           </div>
         </div>

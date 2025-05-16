@@ -26,6 +26,7 @@ function Main() {
                         <li className="nav-item"><a className={`nav-link font text-light ${StylesNavBar['on-hover-link']}`} href="/main/home">Home</a></li>
                         <li className="nav-item"><a className={`nav-link font text-light ${StylesNavBar['on-hover-link']}`} href="/main">Movies</a></li>
                         <li className="nav-item"><a className={`nav-link font text-light ${StylesNavBar['on-hover-link']}`} href="/main/profile">Profile</a></li>
+                        <li className="nav-item"><a className={`nav-link font text-light ${StylesNavBar['on-hover-link']}`} href="/"> 0</a></li>
                         <a href="/" onClick={clearData} className={`align-self-lg-center btn btn-primary border-0 font px-4 rounded-5 pt-2 ${StylesNavBar['on-hover-btn']}`}>Log Out</a>
                     </ul>
                 </div>
@@ -71,7 +72,7 @@ function Main() {
                 <p className="text-light">Start your journey now</p>
                 <form className="d-flex flex-column flex-sm-row gap-2 mt-2">
                 <input type="email" className="form-control" placeholder="Your email" />
-                <button className={`btn btn-primary text-white font border-0 ${StylesFooter['on-hover-btn']}`} type="submit">Signup</button>
+                <a  href="/" onClick={clearData} className={`btn btn-primary text-white font border-0 w-50 ${StylesFooter['on-hover-btn']}`} type="submit">log out</a>
                 </form>
             </div>
             </div>
