@@ -15,19 +15,20 @@ export default createBrowserRouter([
         Component: Main,
         children:[
             {
-                path:"home",
-                Component: Home,
-            },
-            {
                 index: true,
                 Component: Movies,
             },
+            {
+                path:"home",
+                Component: Home,
+            },
+
             {
                 path:"profile",
                 Component: Profile,
             },
             {
-                path: "movie",
+                path: "/main/:id",
                 Component: Movie_Page,
             },
         ]

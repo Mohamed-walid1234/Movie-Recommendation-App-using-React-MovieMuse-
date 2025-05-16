@@ -16,7 +16,6 @@ export const getMovies = async (req, res) => {
     try {
         const Details = await ShowMovie.find().sort({ startYear: -1}).limit(30);
         res.status(200).json(Details);
-        console.log(Details);
     } catch (error) {
         console.log(error.message);
         res.status(500).json({ message: `${error.message} Error getting movies` });
