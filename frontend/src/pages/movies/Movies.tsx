@@ -1,23 +1,28 @@
 import style from "./Movies.module.css";
-import  { useEffect } from 'react';
+import  {  useEffect, useState  } from 'react';
 import { useMovieStore } from "../../util/movies";
 import { Link } from "react-router-dom";
 function Movies() {
 
-    const { movies, loading, error, fetchMovies } = useMovieStore();
+    const [visibleCount, setVisibleCount] = useState(30);
+   
+    const handleShowMore = () => {
+        setVisibleCount((prev) => prev + 30);
+      };
 
+    // fatch movies from the store
+    const { movies, loading, error, fetchMovies } = useMovieStore();
     useEffect(() => {
       fetchMovies();
     }, [fetchMovies]);
   
     if (loading) return <p>Loading movies...</p>;
     if (error) return <p>Error: {error}</p>;
-        
-    const text = movies.map((movie) => movie.releaseDate.slice(0, 10));
-
-
-   
-
+    
+    // const text =  movies.map((movie) => movie.releaseDate.slice(0, 10));
+    const visibleItems = movies.slice(0, visibleCount)
+    console.log(visibleItems);
+      
     return (
         <section className={`${style.bg_one} text-white py-5`}>
             <div className={`${style.bg_two} overflow-x-hidden container`}>
@@ -63,7 +68,7 @@ function Movies() {
                 {/* Cards */}
 
                 <div className="row g-4">
-                    {movies.map((movie, index) =>(
+                    {visibleItems.map((movie, index) =>(
                         <div key={index} className="col-6 col-sm-4 col-md-3 col-lg-2">
                             
                             <div className="card bg-dark text-light h-100 border-0 shadow-sm position-relative rounded-4">
@@ -82,13 +87,13 @@ function Movies() {
                                     </h6>
                                 </div>
                                 <div className="position-absolute top-0 end-0 bg-warning text-dark px-2 small rounded-bottom-start">
-                                    {text[index]}
+                                    {movie.type}
                                 </div>
                             </div>
                         </div>
                     ))}
                     <div className="text-center">
-                        <button className={`${style.btn_style} btn text-primary w-75`}>
+                        <button  onClick={handleShowMore} className={`${style.btn_style} btn text-primary w-75`}>
                             more movies
                         </button>
                     </div>

@@ -21,6 +21,15 @@ function Login() {
     password: ''
   })
   //login logic 
+
+  // handle the submit
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+     await localStorage.setItem('setLoginUserEmail', JSON.stringify(loginUser.email));
+     await localStorage.setItem('setLoginUserPassword', JSON.stringify(loginUser.password));
+    handleLogin();
+
+  };
   const handleLogin = async () => {
     if (!loginUser.email || !loginUser.password) {
       setErrorMessage("Please fill all the fields");
@@ -34,14 +43,6 @@ function Login() {
       setErrorMessage("Invalid email or password");
     }
   }
-  // handle the submit
-  const handleSubmit = async (e: React.FormEvent) => {
-     await localStorage.setItem('setLoginUserEmail', JSON.stringify(loginUser.email));
-     await localStorage.setItem('setLoginUserPassword', JSON.stringify(loginUser.password));
-      handleLogin();
-
-  };
-  
 
   return (
     <>
