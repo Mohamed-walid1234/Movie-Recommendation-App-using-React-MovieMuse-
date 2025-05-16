@@ -35,10 +35,10 @@ export  const loginYet = ()=> {
       // check if the user is logged in
       const [isLoggedIn, setIsLoggedIn] = useState(false);
       const user = users.find((user) => user.email === dataEmail && user.password === dataPassword);
-      console.log(users);
       useEffect(() => {
         if (user) {
-            console.log(user);
+          console.log(typeof(user));
+            localStorage.setItem('SetUserName', JSON.stringify(user.name));
             setIsLoggedIn(true);
           } else {
             setIsLoggedIn(false);

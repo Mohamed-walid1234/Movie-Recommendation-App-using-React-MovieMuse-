@@ -5,7 +5,8 @@ import StylesFooter from './Footer-Auth.module.css';
 
 function Main() {
     const clearData = () => {
-        localStorage.removeItem('setLoginUser');
+        localStorage.clear();
+        sessionStorage.clear();
         alert('Data cleared!');
       };
     return (
