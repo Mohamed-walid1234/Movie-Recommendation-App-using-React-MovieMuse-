@@ -13,7 +13,7 @@ function Main() {
     <>
         {/* NavBar */}
         <div>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top sticky-top">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
                     <div className="container">
                 <a className="navbar-brand" href="/main">
                     <img className={`${StylesNavBar["Logo"]}`} src={logo} alt="Logo"/>
@@ -32,7 +32,9 @@ function Main() {
             </div>
         </nav>
         </div>
-        <Outlet />
+        <div className={`${StylesNavBar['margin-top']}`}>
+            <Outlet />
+        </div>
         {/* Footer */}
         <div>
         <footer className="bg-dark text-white pt-5 pb-4">

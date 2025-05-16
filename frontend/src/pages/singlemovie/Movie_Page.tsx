@@ -32,9 +32,8 @@ function Movie_Page() {
     useEffect(() => {
         fetchMovies();
     }, [fetchMovies]);
-
-    if (loading) return <p>Loading movies...</p>;
-    if (error) return <p>Error: {error}</p>;
+    if (loading) return <p className="d-flex align-content-center justify-content-center fs-6 fw-bold" >Loading movie...</p>;
+    if (error) return <p className="d-flex align-content-center justify-content-center"> Error: {error}</p>;
     //   store the movie data in a state variable
     const result = movies.find((item) => item._id === id);
 

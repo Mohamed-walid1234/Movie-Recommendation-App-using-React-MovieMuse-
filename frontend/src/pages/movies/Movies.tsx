@@ -16,8 +16,8 @@ function Movies() {
       fetchMovies();
     }, [fetchMovies]);
   
-    if (loading) return <p>Loading movies...</p>;
-    if (error) return <p>Error: {error}</p>;
+    if (loading) return <p className="d-flex align-content-center justify-content-center fs-6 fw-bold" >Loading movies...</p>;
+    if (error) return <p className="d-flex align-content-center justify-content-center"> Error: {error}</p>;
     
     // const text =  movies.map((movie) => movie.releaseDate.slice(0, 10));
     const visibleItems = movies.slice(0, visibleCount)
