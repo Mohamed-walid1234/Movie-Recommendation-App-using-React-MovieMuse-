@@ -1,6 +1,7 @@
 import style from "./Movies.module.css";
 import  { useEffect } from 'react';
 import { useMovieStore } from "../../util/movies";
+import { Link } from "react-router-dom";
 function Movies() {
 
     const { movies, loading, error, fetchMovies } = useMovieStore();
@@ -13,7 +14,6 @@ function Movies() {
     if (error) return <p>Error: {error}</p>;
         
     const text = movies.map((movie) => movie.releaseDate.slice(0, 10));
-    console.log(text);
 
 
    
@@ -61,13 +61,13 @@ function Movies() {
                 </div>
 
                 {/* Cards */}
+
                 <div className="row g-4">
                     {movies.map((movie, index) =>(
-                        
                         <div key={index} className="col-6 col-sm-4 col-md-3 col-lg-2">
                             
                             <div className="card bg-dark text-light h-100 border-0 shadow-sm position-relative rounded-4">
-                                <a href="/main/movie">
+                                <Link to={`/main/${movie._id}`}>
                                 <img
                                     src={movie.primaryImage}
                                     className="card-img-top rounded-top-4 "
@@ -75,7 +75,7 @@ function Movies() {
                                     style={{ minHeight: '300px', maxHeight: '300px' , objectFit: 'cover' }}
 
                                 />
-                                </a>
+                                </Link>
                                 <div className="card-body p-2">
                                     <h6 className="card-title small mb-0 text-center fw-semibold">
                                         {movie.primaryTitle}
